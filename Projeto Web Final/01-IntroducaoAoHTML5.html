@@ -74,6 +74,26 @@
 		</div>
 		
 		<div class="w3-container w3-white">
+			<h3 class="w3-text-dark-grey">Atributos de um tag</h3>
+		</div>
+		
+		<div class="w3-container w3-white">
+		    <p class="w3-text-dark-grey">Os atributos da tag são informação adicional para um elemento(tag).Os atributos costumam vir num formato <code class="w3-codespan">nome = "valor"</code>  </p>
+			<p class="w3-text-dark-grey">Todas as tags podem conter atributos especificos para esse tag e os atributos são inseridos dentro da tag de abertura a seguir ao seu nome.</p>
+		</div>
+		
+		<div class="w3-panel w3-margin w3-card-2 w3-light-grey">
+			<h3>Exemplo de um atributo</h3>
+			<div class="w3-code notranslate">
+			&lt;p title="Sou um atributo titulo"&gt;<br>
+			</div>
+		</div> 
+		
+		<div class="w3-container w3-white">
+		    <p class="w3-text-dark-grey">Esta parte dos atributos será abordado outra vez mais aprofundado no futuro. </p>
+		</div>
+		
+		<div class="w3-container w3-white">
 			<h3 class="w3-text-dark-grey">Head e Body</h3>
 		</div>
 	
@@ -88,20 +108,18 @@
 			<h3>Exemplo de um HTML com head e body</h3>
 			<div class="w3-code notranslate">
 				&lt;head&gt;<br>
-			&lt;title&gt;Titulo da Pagina&lt;/title&gt;<br>
+			&nbsp;&lt;title&gt;Titulo da Pagina&lt;/title&gt;<br>
 			&lt;/head&gt;<br>
-			&lt;body&gt;<br><br>
-			&lt;h1&gt;Exemplo de cabeçalho&lt;/h1&gt;<br>
-			&lt;p&gt;Exemplo de paragrafo&lt;/p&gt;<br><br>
+			<br>
+			&lt;body&gt;<br>
+			&nbsp;&lt;h1&gt;Exemplo de cabeçalho&lt;/h1&gt;<br>
+			&nbsp;&lt;p&gt;Exemplo de paragrafo&lt;/p&gt;<br>
 			&lt;/body&gt;<br>
 			</div>
 		</div> 
 		
 		<div class="w3-container w3-white">
-			
-			<p class="w3-text-dark-grey">Nota: a tag <code class="w3-codespan">&lt;p&gt;</code> é usado para criar um parágrafo
-			no HTML, estando o conteúdo entre as tags o que será escrito no parágrafo </p>
-			
+		
 		</div>
 		
 		<div class="w3-container w3-white">
@@ -112,198 +130,42 @@
 		<div class="w3-panel w3-margin w3-card-2 w3-light-grey">
 			<h3>Exemplo de um documento HTML</h3>
 			<div class="w3-code notranslate">
-				&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>
-				&lt;head&gt;<br>
-			&lt;title&gt;Titulo da Pagina&lt;/title&gt;<br>
-			&lt;/head&gt;<br>
-			&lt;body&gt;<br><br>
-			&lt;h1&gt;Exemplo de cabeçalho&lt;/h1&gt;<br>
-			&lt;p&gt;Exemplo de paragrafo&lt;/p&gt;<br><br>
-			&lt;/body&gt;<br>
+				&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br><br>
+				&nbsp;&lt;head&gt;<br>
+			&nbsp;&nbsp;&lt;title&gt;Titulo da Pagina&lt;/title&gt;<br>
+			&nbsp;&lt;/head&gt;<br><br>
+			&nbsp;&lt;body&gt;<br>
+			&nbsp;&nbsp;&lt;h1&gt;Exemplo de cabeçalho&lt;/h1&gt;<br>
+			&nbsp;&nbsp;&lt;p&gt;Exemplo de paragrafo&lt;/p&gt;<br>
+			&nbsp;&lt;/body&gt;<br><br>
 			&lt;/html&gt;
 			</div>
 		</div> 
 		
 		<div class="w3-container w3-white">
-				<p class="w3-text-dark-grey">Neste exemplo, podemos visualizar uma estrutura básica do HTML, que irá criar uma página da web com o titulo
-                				            <code class="w3-codespan">Titulo da Pagina</code> e criar um cabeçalho com o texto <code class="w3-codespan">
-											Exemplo de cabeçalho</code> e um paragrafo com o texto <code class="w3-codespan">
-											Exemplo de parágrafo</code>.</p>			
+				<p class="w3-text-dark-grey">Neste exemplo, podemos visualizar uma estrutura básica do HTML, que envolve o exemplo anterior,mas contendo juntamente as tags 
+				                            <code class="w3-codespan">&lt;!DOCTYPE html&gt;</code>
+                				            e a tag <code class="w3-codespan">&lt;html&gt;</code>.</p>			
 		</div>
 		
 		<div class="w3-container w3-white">
-            <p class="w3-text-dark-grey">Esta estrutura começa com a tag <code class="w3-codespan">&lt;!DOCTYPE html&gt;</code> que serve para indicar ao
+            <p class="w3-text-dark-grey">A tag <code class="w3-codespan">&lt;!DOCTYPE html&gt;</code> serve para indicar ao
 				                             browser que este documento trata-se de um documento do tipo HTML.</p>
-            <p class="w3-text-dark-grey">Esta tag necessita de ser a primeira tag criada no documento para não ocorrer erros</p>												 
+            <p class="w3-text-dark-grey">Esta tag é escrita no topo do documento e é só necessário escrever uma única vez no documento(não é necessário usar
+			um tag de fecho).</p>												 
 		</div>
 		
 		<div class="w3-container w3-white">
-            <p class="w3-text-dark-grey">A tag <code class="w3-codespan">&lt;html&gt;</code> serve para juntar todo o conteúdo entre as suas tags para html.</p>
-            <p class="w3-text-dark-grey">Esta tag necessita de ser a segunda tag criada no documento e tem de ser fechada no fim do documento para não ocorrer erros</p>												 
+            <p class="w3-text-dark-grey">A tag <code class="w3-codespan">&lt;html&gt;</code> serve para representar a raiz do html.</p>
+            <p class="w3-text-dark-grey">Esta tag é utilizada como recipiente para todo o conteudo do html (excepto o <code class="w3-codespan">&lt;!DOCTYPE html&gt;</code>) para o conteudo presente
+			entre as tags  <code class="w3-codespan">&lt;html&gt;</code> estar identificado como parte do html.  </p>												 
 		</div>
-
 	
 	<!-- Fim -->
-
+	
+	<button style="float:right">Next</button>
 	
 	
-	<!-- Inicio -->
-	<div class="w3-row-padding w3-margin-bottom">
-		<div class="w3-container">
-			<h2>Displaying Code</h2>
-			<p>The w3-code class is designed to display example code:</p>
-		</div>
-		<div class="w3-panel w3-margin w3-card-2 w3-light-grey">
-			<h3>Example</h3>
-			<div class="w3-code notranslate">
-				fruits[0] = "Banana";<br>
-				fruits[1] = "Apple";<br>
-				fruits[2] = "Mango";<br>
-				fruits[3] = "Plum";<br>
-			</div>
-		</div> 
-	</div>
-	<!-- Fim -->
-
-	
-	
-	<!-- Inicio -->
-	<div class="w3-row-padding w3-margin-bottom">
-		<div class="w3-container">
-			<h2>Displaying colored HTML</h2>
-			<p>W3Schools provides a JavaScript library for displaying colored code.</p>
-		</div>
-		<div class="w3-panel w3-margin w3-card-2 w3-light-grey"> 
-		  <h4>HTML Example</h4>
-		  <div class="w3-code htmlHigh notranslate">
-			&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>
-			&lt;title&gt;HTML Tutorial&lt;/title&gt;<br>
-			&lt;body&gt;<br><br>
-			&lt;h1&gt;This is a heading&lt;/h1&gt;<br>
-			&lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>
-			&lt;/body&gt;<br>
-			&lt;/html&gt;
-		  </div>
-		</div>
-	</div>
-	<!-- Fim -->
-
-	
-	
-	<!-- Inicio -->
-	<div class="w3-row-padding w3-margin-bottom">
-		<div class="w3-container">
-			<h2>Displaying colored CSS</h2>
-			<p>W3Schools provides a JavaScript library for displaying colored code.</p>
-		</div>
-		<div class="w3-panel w3-margin w3-card w3-light-grey"> 
-		  <h4>CSS Example</h4>
-		  <div class="w3-code cssHigh notranslate">
-			body {<br>
-			background-color: #d0e4fe;<br>
-			}<br><br>
-
-			h1 {<br>
-			color: orange;<br>
-			text-align: center;<br>
-			}<br><br>
-
-			p {<br>
-			font-family: "Times New Roman";<br>
-			font-size: 20px;<br>
-			}
-		  </div>
-		</div>
-	</div>
-	<!-- Fim -->
-
-	
-	
-	<!-- Inicio -->
-	<div class="w3-row-padding w3-margin-bottom">
-		<div class="w3-container">
-			<h2>Displaying colored JavaScript code</h2>
-			<p>W3Schools provides a JavaScript library for displaying colored code.</p>
-		</div>
-		<div class="w3-panel w3-margin w3-card-2 w3-light-grey"> 
-		  <h4>JavaScript Example</h4>
-		  <div class="w3-code jsHigh notranslate">
-			fruits[0] = "Banana";<br>
-			fruits[1] = "Apple";<br>
-			fruits[2] = "Mango";<br>
-			fruits[3] = "Plum";<br>
-		  </div>
-		</div>
-	</div>
-	<!-- Fim -->
-
-	
-	
-	<!-- Inicio -->
-	<div class="w3-row-padding w3-margin-bottom">
-		<div class="w3-container">
-		  <h2>Highlight Inline Code</h2>
-		  <p>The w3-codespan class is used to hightlight inline code:</p>
-		  <p>The <code class="w3-codespan">html</code> element defines an HTML page.</p>
-		</div>
-	</div>
-	<!-- Fim -->
-
-	
-	
-	<!-- Inicio -->
-	<div class="w3-row-padding w3-margin-bottom">
-		<div class="w3-container">
-			<h2>Displaying Step by step</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque magna ligula, sodales at semper eget, gravida ac mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque magna ligula, sodales at semper eget, gravida ac mauris.</p>
-		</div>
-		<div class="w3-container w3-margin w3-leftbar w3-light-grey w3-border-blue">
-		<!-- Step 1 -->
-			<br>
-			<div class="w3-container w3-cell w3-cell-middle">
-				<span class="w3-badge w3-large w3-padding">1</span>
-			</div>
-			<div class="w3-container w3-cell w3-cell-middle">
-				<h4>Nome step 1</h4>
-			</div>
-			
-			<div class="w3-container w3-margin-left">
-				<div class="w3-container w3-cell">
-					<span>&nbsp;&nbsp;</span>
-				</div>
-				<div class="w3-container w3-cell">
-					<p>The w3-leftbar class adds a thick left border (bar) to an element. The w3-leftbar class adds a thick left border (bar) to an element. The w3-leftbar class adds a thick left border (bar) to an element.</p>
-				</div>
-			</div>
-			
-		<!-- Step 2 -->
-			<br>
-			<div class="w3-container w3-cell w3-cell-middle">
-				<span class="w3-badge w3-large w3-padding">2</span>
-			</div>
-			<div class="w3-container w3-cell w3-cell-middle">
-				<h4>Nome step 2</h4>
-			</div>
-			
-			<div class="w3-container w3-margin-left">
-				<div class="w3-container w3-cell">
-					<span>&nbsp;&nbsp;</span>
-				</div>
-				<div class="w3-container w3-cell">
-					<p>The w3-leftbar class adds a thick left border (bar) to an element. The w3-leftbar class adds a thick left border (bar) to an element. The w3-leftbar class adds a thick left border (bar) to an element.</p>
-				</div>
-			</div>
-			
-		</div>
-	</div>
-	<!-- Fim -->
-
-	
-	
-	<div class="w3-white w3-large" style="z-index:4">
-	  <span >&nbsp;</span>
-	</div>
-
 
 
   <!-- End page content -->
