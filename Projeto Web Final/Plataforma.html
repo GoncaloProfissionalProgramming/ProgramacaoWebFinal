@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Plataforma</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="Libraries/w3.css">
+
+	<script>
+		var mySidenav;
+		var overlayBg;
+		var selectedElement;
+		
+		window.onload = function(){
+			var height = document.documentElement.clientHeight;
+			height = height - 90;
+			var iFrame = document.getElementById("iFrameContent");
+			iFrame.style.height = height + 'px';
+			window.addEventListener("resize", resizeBrowser,false);
+			// Get the Sidenav
+			mySidenav = document.getElementById("mySidenav");
+			// Get the DIV with overlay effect
+			overlayBg = document.getElementById("myOverlay");
+		}
+
+		function resizeBrowser(ev){
+			var height = document.documentElement.clientHeight;
+			height = height - 90;
+			var iFrame = document.getElementById("iFrameContent");
+			iFrame.style.height = height + 'px';
+		}
+		
+		// Toggle between showing and hiding the sidenav, and add overlay effect
+		function w3_open() {
+			if (mySidenav.style.display === 'block') {
+				mySidenav.style.display = 'none';
+				overlayBg.style.display = "none";
+			} else {
+				mySidenav.style.display = 'block';
+				overlayBg.style.display = "block";
+			}
+		}
+
+		// Close the sidenav with the close button
+		function w3_close() {
+			mySidenav.style.display = "none";
+			overlayBg.style.display = "none";
+		}
+		
+		function accordionFunc(elem) {
+			var x = document.getElementById(elem);
+			if (x.className.indexOf("w3-show") == -1) {
+				x.className += " w3-show";
+				x.previousElementSibling.className += " w3-gray";
+			} else { 
+				x.className = x.className.replace(" w3-show", "");
+				x.previousElementSibling.className = 
+				x.previousElementSibling.className.replace(" w3-gray", "");
+			}
+		}
+		
+		function selElement(elem){
+			if(typeof selectedElement != "undefined")
+				selectedElement.className = selectedElement.className.replace(" w3-blue", "");
+			selectedElement = elem;
+			selectedElement.className += " w3-blue";;
+		}
+</script>
+		
+	</head>
+	
+<body class="w3-white">
+
+	<!-- Top container -->
+	<div class="w3-container w3-top w3-blue w3-large" style="z-index:4">
+		<button class="w3-btn w3-hide-large w3-padding-0 w3-blue" onclick="w3_open();"><img src="menu.png"</img></button>
+		<div class="w3-right w3-padding-0">
+			<div class="w3-container">HTML5,CSS e JavaScript&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+			<div class="w3-container w3-small w3-right"><i>Aprenda de forma simples</i></div>
+		</div>
+		
+	</div>
+
+	<!-- Sidenav/menu -->
+	<nav class="w3-sidenav w3-collapse w3-light-grey w3-animate-left" style="z-index:3;width:300px;" id="mySidenav"><br>
+		
+		<div class="w3-container w3-section w3-border-bottom w3-black" style="height:2px;"></div>
+		<div class="w3-container w3-row">
+			<div>
+				<b>HTML5</b>
+			</div>
+		</div>
+  
+		<div class="w3-container w3-section w3-border-bottom w3-border-black" style="height:2px;"></div>
+			<a href="#" class="w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu">Close Menu</a>
+			
+			<a href="01-IntroducaoAoHTML5.html" target="content_iframe" class="w3-padding" onclick="selElement(this)"><img src="timerBlack16.png"></img>&nbsp;&nbsp;Introdução ao HTML5</a>
+			<a href="02-UnidConceitos.html" target="content_iframe" class="w3-padding" onclick="selElement(this)"><img src="processingBlack16.png"></img>&nbsp;&nbsp;Conceitos</a>
+
+			<div class="w3-container w3-section w3-border-bottom w3-blue" style="height:2px;"></div>
+
+			<button class="w3-button w3-block w3-left-align" onclick="accordionFunc('Group01')">
+				<img src="analysisBlack16.png"></img>&nbsp;&nbsp;Código HTML/CSS&nbsp;&nbsp;&nbsp;&nbsp; <img src="caret-down.png"</img>
+			</button>
+			<div id="Group01" class="w3-hide w3-card w3-white">
+				<a href="03-UnidCode.html" target="content_iframe" class="w3-padding" onclick="selElement(this)">&nbsp;&nbsp;Displaying Code</a>
+				<a href="04-UnidColoredHTML.html" target="content_iframe" class="w3-padding" onclick="selElement(this)">&nbsp;&nbsp;Displaying colored HTML</a>
+				<a href="05-UnidColoredCSS.html" target="content_iframe" class="w3-padding" onclick="selElement(this)">&nbsp;&nbsp;Displaying colored CSS</a>
+			</div>
+
+
+			<button class="w3-button w3-block w3-left-align" onclick="accordionFunc('Group02')">
+				<img src="canceledBlack16.png"></img>&nbsp;&nbsp;Código JavaScript&nbsp;&nbsp;&nbsp;&nbsp; <img src="caret-down.png"</img>
+			</button>
+			<div id="Group02" class="w3-hide w3-white w3-card">
+				<a href="06-UnidJavaScript.html" target="content_iframe" class="w3-padding" onclick="selElement(this)">&nbsp;&nbsp;Displaying JavaScript</a>
+				<a href="07-UnidColoredJavaScript.html" target="content_iframe" class="w3-padding" onclick="selElement(this)">&nbsp;&nbsp;Displaying colored JavaScript</a>
+			</div>
+
+			<div class="w3-container w3-section w3-border-bottom w3-blue" style="height:2px;"></div>
+			
+			<a href="08-UnidHighlight Inline Code.html" target="content_iframe" class="w3-padding" onclick="selElement(this)"><img src="lockBlack16.png"></img>&nbsp;&nbsp;Highlight Inline Code</a>
+			<a href="09-UnidDisplayingStepByStep.html" target="content_iframe" class="w3-padding" onclick="selElement(this)"><img src="chartsBlack16.png"></img>&nbsp;&nbsp;Displaying Step by step</a>
+
+			<div class="w3-container w3-section w3-border-bottom w3-black" style="height:2px;"></div>
+
+			<div class="w3-container w3-row">
+			<div>
+				<b>CSS3</b>
+			</div>
+		    </div>
+			
+			<div class="w3-container w3-section w3-border-bottom w3-black" style="height:2px;"></div>
+			
+			<a href="10-AFC-AC-10101-1.pdf" target="content_iframe" class="w3-padding" onclick="selElement(this)"><img src="processingBlack16.png"></img>&nbsp;&nbsp;Displaying PDF file</a>
+
+		    <div class="w3-container w3-section w3-border-bottom w3-black" style="height:2px;"></div>
+		    <div class="w3-container w3-row">
+			  <div>
+				<b>JavaScript</b>
+			  </div>
+		    </div>
+  
+		<div class="w3-container w3-section w3-border-bottom w3-border-black" style="height:2px;"></div>
+	
+			
+			<br><br><br><br><br><br>
+	</nav>
+	
+	<!-- Overlay effect when opening sidenav on small screens -->
+	<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()"
+	     style="cursor:pointer" title="close side menu" id="myOverlay">
+	</div>
+
+	
+	<!-- !PAGE CONTENT! -->
+	<div class="w3-main" style="margin-left:300px;margin-top:58px;">
+
+		<iframe id="iFrameContent" name="content_iframe" style="border:none;width:100%"></iframe>
+
+		<!-- Footer  -->
+		<footer class="w3-container w3-blue w3-bottom w3-padding-8 w3-tiny">
+			<div><strong>ISTEC - CTeSP</strong></div>
+		</footer>
+
+
+	<!-- End page content -->
+	</div>
+	</body>
+</html>

@@ -1,0 +1,23 @@
+﻿Javascript
+
+1-Primeiros conceitos
+    -Como criar scripts numa pag.HTML
+	-Receber Dados(prompt) e apresentar dados(alert)
+	
+2-Variáveis e tipos básicos dados
+
+3-Strings
+
+4-Operadores
+
+5-Caixa Mensagem	
+
+6-Estruturas controlo(if,switch)
+
+7-Estruturas de repetição(for,while)
+
+8-Arrays
+
+9-Funções
+
+10-Objetos
