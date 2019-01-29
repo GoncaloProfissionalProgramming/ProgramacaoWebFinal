@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Unit</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../Libraries/w3.css">
+
+	<style>
+		html,body,h1,h2,h3,h4,h5 {font-family: "Verdana", "Helvetica", sans-serif;}
+
+		h1 {font-size: 48px;}
+		h2 {font-size: 36px;}
+		h3 {font-size: 24px;}
+		h4 {font-size: 20px;}
+		h5 {font-size: 18px;}
+		h6 {font-size: 16px;}
+
+	</style>
+	
+	<script src="Libraries/w3codecolor.js"></script>
+	
+
+
+</head>
+<body class="w3-light-grey">
+
+<!-- !PAGE CONTENT! -->
+<div id="pageContent" class="w3-main w3-white" >
+
+	<div class="w3-row-padding w3-gray">
+		<h3>CSS</h3>
+	</div>
+	<div class="w3-row-padding w3-margin-bottom w3-light-gray">
+		<h4><i>Borders CSS</i></h4>
+	</div>
+
+	<!-- Inicio -->
+	<div class="w3-row-padding w3-margin-bottom">
+
+
+		<div class="w3-container w3-white">
+			<h6 class="w3-text-dark-grey">A propriedade CSS Border permite-nos especificar o style, largura e cor de um elemento.
+			</h4>
+		</div>
+
+		<div class="w3-container">
+			<h2> Border-Style</h2>
+		</div>
+		
+		<div class="w3-container w3-white">
+			<p class="w3-text-dark-grey">A propriedade Border-Style especifica qual tipo de border mostra.<br>
+				Os valores abaixo são permitidos:<br>
+				<ul>
+					<li><code class="w3-codespan">&lt;dotted&gt;</code> é uma borda com pontos.</li>
+					<li><code class="w3-codespan">&lt;dashed&gt;</code> é uma borda com traços.</li>
+					<li><code class="w3-codespan">&lt;solid&gt;</code> é uma borda de uma linha única.</li>
+					<li><code class="w3-codespan">&lt;double&gt;</code> é uma borda dupla.</li>
+					<li><code class="w3-codespan">&lt;groove&gt;</code> define uma borda 3D, o efeito depende da cor da borda.</li>
+					<li><code class="w3-codespan">&lt;ridge&gt;</code> define uma borda 3D com sulcos, o efeito depende da cor da borda.</li>
+					<li><code class="w3-codespan">&lt;inset&gt;</code> define uma borda em 3D, o efeito depende do valor da cor da borda, com um efeito de fora para dentro.</li>
+					<li><code class="w3-codespan">&lt;outset&gt;</code> define uma borda em 3D, o efeito depende do valor da cor da borda, com um efeito de dentro para fora.</li>
+					<li><code class="w3-codespan">&lt;none&gt;</code> não tem borda.</li>
+					<li><code class="w3-codespan">&lt;hidden&gt;</code> é uma borda escondida.</li>
+				</ul>
+				A propriedade Border-Style pode ter um de quatro valores(borda de cima, borda direita, borda de baixo e borda da esquerda).
+			</p>
+		</div>
+
+
+			<div class="w3-panel w3-margin w3-card w3-light-grey"> 
+				<h4>Exemplo</h4>
+				<div class="w3-code cssHigh notranslate">
+					p.dotted {border-style: dotted;}<br>
+					p.dashed {border-style: dashed;}<br>
+					p.solid {border-style: solid;}<br>
+					p.double {border-style: double;}<br>
+					p.groove {border-style: groove;}<br>
+					p.ridge {border-style: ridge;}<br>
+					p.inset {border-style: inset;}<br>
+					p.outset {border-style: outset;}<br>
+					p.none {border-style: none;}<br>
+					p.hidden {border-style: hidden;}<br>
+					p.mix {border-style: dotted dashed solid double;}<br>
+				</div>
+				<div class="w3-code htmlHigh notranslate" >
+					<p style="border-style: dotted;">border-style: dotted</p>
+					<p style="border-style: dashed;">border-style: dashed</p>
+					<p style="border-style: solid;">border-style: solid</p>
+					<p style="border-style: double;">border-style: double</p>
+					<p style="border-style: groove;">border-style: groove</p>
+					<p style="border-style: ridge;">border-style: ridge</p>
+					<p style="border-style: inset;">border-style: inset</p>
+					<p style="border-style: outset;">border-style: outset</p>
+					<p style="border-style: none;">border-style: none</p>
+					<p style="border-style: hidden;">border-style: hidden</p>
+					<p style="border-style: dotted dashed solid double;">border-style: dotted dashed solid double</p>
+				</div>
+				</div>
+				
+				<div class="w3-container">
+					<h2> Border-Width</h2>
+				</div>
+				
+				<div class="w3-container w3-white">
+					<p class="w3-text-dark-grey">A propriedade <code class="w3-codespan">Border-Width</code> especifica a largura das quatro bordas.<br>
+						A largura pode ser definida para um tamanho específico (em px, pt, cm, in, etc.) ou usando um de três valores padrão: fino, médio ou grosso.<br>
+						A propriedade <code class="w3-codespan">Border-Width</code> pode ter um de quatro valores (borda de cima, borda direita, borda de baixo e borda da esquerda).
+					</p>
+				</div>
+		
+		
+					<div class="w3-panel w3-margin w3-card w3-light-grey"> 
+						<h4>Exemplo</h4>
+						<div class="w3-code cssHigh notranslate">
+							border{<br>
+								&nbsp;&nbsp;border-style: solid;<br>
+								&nbsp;&nbsp;border-width: 5px;<br>
+							  }<br>
+						</div>
+						<div class="w3-code htmlHigh notranslate" >
+							<p style="border-style: solid;border-width: 5px;">Border com 5px</p>
+						</div>
+					</div>
+
+					<div class="w3-container">
+						<h2> Border-Color</h2>
+					</div>
+					
+					<div class="w3-container w3-white">
+						<p class="w3-text-dark-grey">A propriedade <code class="w3-codespan">Border-Color</code> é usada para definir a cor das quatro bordas.<br>
+							A cor pode ser definida por:<br>
+							<ul>
+								<li>Nome - especifica um nome de cor, como "red"</li>
+								<li>Hex - especifica um valor hexadecimal, como "#ff0000"</li>
+								<li>RGB - especifica um valor RGB, como "rgb(255,0,0)"</li>
+								<li>Transparent</li>
+							</ul>
+							Se a <code class="w3-codespan">Border-Color</code> não estiver definida esta irá ficar com a cor elemento em que estiver inserida.<br>
+							A propriedade <code class="w3-codespan">Border-Color</code> pode ter um de quatro valores (borda de cima, borda direita, borda de baixo e borda da esquerda).
+						</p>
+					</div>
+			
+			
+						<div class="w3-panel w3-margin w3-card w3-light-grey"> 
+							<h4>Exemplo</h4>
+							<div class="w3-code cssHigh notranslate">
+								border{<br>
+									&nbsp;&nbsp;border-style: solid;<br>
+									&nbsp;&nbsp;border-color: #0095D9;<br>
+								  }<br>
+							</div>
+							<div class="w3-code htmlHigh notranslate" >
+								<p style="border-style: solid;border-color:#0095D9;">Border com a cor #0095D9</p>
+							</div>
+						</div>
+
+  <!-- End page content -->
+</div>
+	<script>
+		w3CodeColor();
+	</script>
+</body>
+</html>
