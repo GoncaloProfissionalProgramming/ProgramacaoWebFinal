@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Unit</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../Libraries/w3.css">
+
+	<style>
+		html,body,h1,h2,h3,h4,h5 {font-family: "Verdana", "Helvetica", sans-serif;}
+
+		h1 {font-size: 48px;}
+		h2 {font-size: 36px;}
+		h3 {font-size: 24px;}
+		h4 {font-size: 20px;}
+		h5 {font-size: 18px;}
+		h6 {font-size: 16px;}
+
+	</style>
+	
+	<script src="Libraries/w3codecolor.js"></script>
+	
+
+
+</head>
+<body class="w3-light-grey">
+
+<!-- !PAGE CONTENT! -->
+<div id="pageContent" class="w3-main w3-white" >
+
+	<div class="w3-row-padding w3-gray">
+		<h3>CSS</h3>
+	</div>
+	<div class="w3-row-padding w3-margin-bottom w3-light-gray">
+		<h4><i>Fontes CSS</i></h4>
+	</div>
+
+	<!-- Inicio -->
+	<div class="w3-row-padding w3-margin-bottom">
+
+
+		<div class="w3-container w3-white">
+			<h6 class="w3-text-dark-grey">A propriedade Font em CSS permite definir a familia da fonte, se é bold ou não, o tamanho da letra e o estilo do texto.
+			</h6>
+		</div>
+
+		<div class="w3-container">
+			<h2> CSS Font Families</h2>
+		</div>
+		
+		<div class="w3-container w3-white">
+			<p class="w3-text-dark-grey">Em CSS existem dois tipos de familias de fontes que são:<br>
+			<ul>
+				<li>Família Genérica- Grupo de fontes que são parecidas umas com as outras, por exemplo: "Serif" ou "Monospace".</li>
+				<li>Família de Fontes- É uma fonte especifica, por exemplo: "Arial" ou "Calibri".</li>
+			</ul>
+			</p>
+		</div>
+
+				
+				<div class="w3-container">
+					<h2> Font Family</h2>
+				</div>
+
+				<div class="w3-container w3-white">
+					<p class="w3-text-dark-grey">A fonte de um texto é definida com a propriedade <code class="w3-codespan">font-family</code>.<br>
+					<br>Esta propriedade deve conter o nome de várias fontes, assim se o browser não conseguir reconhecer a primeira fonte irá tentar a segunda e por aí em diante.<br>
+					<br>Começa-se pela fonte que se quer utilizar e termina-se por uma genérica para que o browser escolha uma fonte parecida na família genérica, se não estiver disponível outra fonte.<br>
+					<br>Nota: Se o nome da fonte for mais que uma palavra então esta deve estar entre aspas, por exemplo: "Times New Roman".<br>
+					<br>Mais que uma fonte deve ser especifica entre vírgulas.	
+					</p>
+				</div>
+		
+		
+					<div class="w3-panel w3-margin w3-card w3-light-grey"> 
+						<h4>Exemplo</h4>
+						<div class="w3-code cssHigh notranslate">
+							h1 {<br>
+								font-family: "Times New Roman", Arial, Monospace;<br>
+							  }
+						</div>
+						
+						</div>
+
+						<div class="w3-container">
+							<h2> Font Style</h2>
+						</div>
+		
+						<div class="w3-container w3-white">
+							<p class="w3-text-dark-grey">A propriedade CSS Font-Style é mais usada para definir texto em itálico.
+								<ul>
+									<li>Normal- O texto é mostrado como normal</li>
+									<li>Itálico- O texto é mostrado a itálico.</li>
+									<li>Obliquo- O texto é "inclinado" (muito semelhante ao itálico, mas menos usado)</li>
+								</ul>
+							</p>
+						</div>
+				
+				
+						<div class="w3-panel w3-margin w3-card w3-light-grey"> 
+							<h4>Exemplo</h4>
+							<div class="w3-code htmlHigh notranslate">
+								&lt;p style="font-style: normal;"&gt;Texto normal&lt;/p&gt;<br>
+								&lt;p style="font-style: italic;"&gt;Texto a itálico&lt;/p&gt;<br>
+								&lt;p style="font-style: oblique;"&gt;Texto a Oblíquo&lt;/p&gt;<br>
+							</div>
+							<div class="w3-code htmlHigh notranslate" >
+								<p style="font-style: normal">Texto normal</p>
+								<p style="font-style: italic">Texto a itálico</p>
+								<p style="font-style: oblique">Texto a Oblíquo</p>
+							</div>
+							
+							</div>
+
+							<div class="w3-container">
+								<h2> Font Size</h2>
+							</div>
+			
+							<div class="w3-container w3-white">
+								<p class="w3-text-dark-grey">A propriedade CSS Font-Size é usada para definir o tamanho do texto.<br>
+									<br>Existem 3 formas de definir o tamanho do texto:<br>
+									<ul>
+										<li>Percentagem (%)</li>
+										<li>Em (em)</li>
+										<li>Pixeis (px)</li>
+									</ul>
+								</p>
+							</div>
+					
+					
+							<div class="w3-panel w3-margin w3-card w3-light-grey"> 
+								<h4>Exemplo</h4>
+								<div class="w3-code htmlHigh notranslate">
+									&lt;p style="font-size: 120%;"&gt;Texto definido com Percentagem&lt;/p&gt;<br>
+									&lt;p style="font-size: 5em;"&gt;Texto definido com em&lt;/p&gt;<br>
+									&lt;p style="font-size: 25px;"&gt;Texto definido com pixeis&lt;/p&gt;<br>
+								</div>
+								<div class="w3-code htmlHigh notranslate" >
+									<p style="font-size: 120%">Texto definido com Percentagem</p>
+									<p style="font-size: 0.7em">Texto definido com em</p>
+									<p style="font-size: 25px">Texto definido com em</p>
+								</div>
+								
+							</div>
+
+							<div class="w3-container">
+								<h2> Font Weight</h2>
+							</div>
+			
+							<div class="w3-container w3-white">
+								<p class="w3-text-dark-grey">A propriedade CSS Font-Weight é usada para definir o a grossura do texto.<br>
+									<br>Existem 3 formas de definir a grossura do texto:<br>
+									<ul>
+										<li>Normal</li>
+										<li>Bold</li>
+										<li>Lighter</li>
+										<li>Por números</li>
+									</ul>
+								</p>
+							</div>
+					
+					
+							<div class="w3-panel w3-margin w3-card w3-light-grey"> 
+								<h4>Exemplo</h4>
+								<div class="w3-code htmlHigh notranslate">
+									&lt;p style="font-weight: normal;"&gt;Texto normal&lt;/p&gt;<br>
+									&lt;p style="font-weight: bold;"&gt;Texto a bold&lt;/p&gt;<br>
+									&lt;p style="font-weight: lighter;"&gt;Texto em lighter&lt;/p&gt;<br>
+									&lt;p style="font-weight: 600;"&gt;Texto por numeros&lt;/p&gt;<br>
+								</div>
+								<div class="w3-code htmlHigh notranslate" >
+									<p style="font-weight: normal">Texto normal</p>
+									<p style="font-weight: bold">Texto a bold</p>
+									<p style="font-weight: lighter">Texto em lighter</p>
+									<p style="font-weight: 900;">Texto por numeros</p>
+								</div>
+								
+							</div>
+
+  <!-- End page content -->
+</div>
+	<script>
+		w3CodeColor();
+	</script>
+</body>
+</html>
