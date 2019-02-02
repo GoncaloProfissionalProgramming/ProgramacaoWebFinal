@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Unit</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../Libraries/w3.css">
+
+	<style>
+		html,body,h1,h2,h3,h4,h5 {font-family: "Verdana", "Helvetica", sans-serif;}
+
+		h1 {font-size: 48px;}
+		h2 {font-size: 36px;}
+		h3 {font-size: 24px;}
+		h4 {font-size: 20px;}
+		h5 {font-size: 18px;}
+		h6 {font-size: 16px;}
+
+	</style>
+	
+	<script src="Libraries/w3codecolor.js"></script>
+	
+
+
+</head>
+<body class="w3-light-grey">
+
+<!-- !PAGE CONTENT! -->
+<div id="pageContent" class="w3-main w3-white" >
+
+	<div class="w3-row-padding w3-gray">
+		<h3>HTML5</h3>
+	</div>
+	<div class="w3-row-padding w3-margin-bottom w3-light-gray">
+		<h4><i>Atributos</i></h4>
+	</div>
+
+	<!-- Inicio -->
+	<div class="w3-row-padding w3-margin-bottom">
+		
+		<div class="w3-container">
+			<h2>Atributos HTML</h2>
+		</div>
+		
+		<div class="w3-container w3-white">
+    		<p class="w3-text-dark-grey">Como tinha sido explicado na introdução do HTML, os atributos
+			                             são informação adicional para um elemento do HTML, e costumam
+										 vir no formato <code class="w3-codespan">nome = "valor"</code>.</p>
+            <p class="w3-text-dark-grey"> Nesta parte será abordado atributos simples que poderá utilizar. </p>										 
+		</div>
+		
+		<div class="w3-container w3-white">
+			<h3 class="w3-text-dark-grey">Atributo title</h3>
+		</div>
+		
+		<div class="w3-container w3-white">
+    		<p class="w3-text-dark-grey">O atributo <code class="w3-codespan">title</code> serve para exibir um texto quando um utilizador
+			                             arrastar o rato para cima do elemento com esse atributo.</p>
+		    <p class="w3-text-dark-grey">Este atributo pode ser utilizado por qualquer elemento.</p>
+										 
+		   <div class="w3-panel w3-margin w3-card-2 w3-light-grey">
+			<h3>Exemplo do atributo title(com resultado)</h3>
+			<div class="w3-code notranslate">
+			&lt;p title="Sou um atributo titulo"&gt;Exemplo&lt;/p&gt;
+			</div>
+			<div class="w3-code notranslate">
+			<p title="Sou um atributo titulo">Exemplo</p>
+			</div>
+			
+		    </div> 
+			
+			<p class="w3-text-dark-grey">Se arrastar o rato para cima do parágrafo exemplo, é exibido o texto escrito 
+			                             no atributo title(neste caso sendo 'Sou um atributo titulo').</p>
+			
+			</div>
+
+			<div class="w3-container w3-white">
+			<h3 class="w3-text-dark-grey">Atributos width e height</h3>
+		    </div>
+			
+			<div class="w3-container w3-white">
+    		<p class="w3-text-dark-grey">Os atributos <code class="w3-codespan">width</code> e <code class="w3-codespan">height</code>
+                                         servem para definir o comprimento (<code class="w3-codespan">width</code>) e a altura(<code class="w3-codespan">height</code>)
+                                         de um elemento HTML.										 </p>
+            <p class="w3-text-dark-grey">Estes atributos só funcionam em elementos que suportem dimensões diferentes(imagens como foi exibido na parte anterior). </p>										 
+		
+		   <div class="w3-panel w3-margin w3-card-2 w3-light-grey">
+			<h3>Exemplo dos atributos width e height (com resultado)</h3>
+	    	<div class="w3-code notranslate">
+			&lt;img src="analysisBlack16.png" width="50" height="50"&gt;&lt;/img&gt;
+	    	</div>
+	    	<div class="w3-code notranslate">
+		  	<img src="../../img/analysisBlack16.png" width="50" height="50"></img> 
+	    	</div>
+     		</div> 
+		
+		   <p class="w3-text-dark-grey">Nota: os valores de <code class="w3-codespan">width</code> e <code class="w3-codespan">height</code> vêm em pixeis,como no exemplo pode ser visualizado,
+		                                a imagem ocupa 50x50(50 de altura e 50 de comprimento) pixeis no resultado.</p>
+		
+		    </div> 
+			
+			<div class="w3-container w3-white">
+			<h3 class="w3-text-dark-grey">Atributo src</h3>
+		    </div>
+			
+			<div class="w3-container w3-white">
+    		    <p class="w3-text-dark-grey">O atributo <code class="w3-codespan">src</code> permite ir buscar um ficheiro externo a ser utilizado pelo elemento.</p>
+                <p class="w3-text-dark-grey">O valor a ser indicado para este atributo é a localização do ficheiro relativo a onde o ficheiro HTML esta localizado.</p>				
+		    </div>
+			
+			<div class="w3-container w3-white">
+    		    <p class="w3-text-dark-grey">Como por exemplo, um ficheiro HTML encontra-se numa pasta principal e uma imagem encontra-se numa pasta <code class="w3-codespan">img</code>
+				                             dentro da pasta principal.</p>
+				<p class="w3-text-dark-grey">Para o ficheiro HTML utilizar essa imagem para um elemento img,indica-se primeiro o nome da pasta, e depois o nome da imagem a ser utilizado,como por exemplo.</p>
+       
+		   </div>	
+			<div class="w3-panel w3-margin w3-card-2 w3-light-grey">
+		
+	    	<div class="w3-code notranslate">
+			&lt;img src="img/analysisBlack16.png" &gt;&lt;/img&gt;
+	    	</div>
+	    	<div class="w3-code notranslate">
+		  	<img src="../../img/analysisBlack16.png" width="50" height="50"></img> 
+	    	</div>
+     		</div>
+			
+			<div class="w3-container w3-white">
+			<h3 class="w3-text-dark-grey">Atributo alt</h3>
+		    </div>
+            <div class="w3-container w3-white">
+            <p class="w3-text-dark-grey">O atributo <code class="w3-codespan">alt</code> serve para exibir o valor desse atributo quando o elemento não consegue
+			exibir o ficheiro externo a ser utilizado.</p>
+			
+			<p class="w3-text-dark-grey">Como por exemplo se a imagem analysisBlack16.png não existir e tentar-mos buscar essa imagem no HTML, será exibido o texto do alt.</p>
+			
+			</div>		
+		
+		    <div class="w3-panel w3-margin w3-card-2 w3-light-grey">
+			
+	    	<div class="w3-code notranslate">
+			&lt;img src="img/analysisBlack16.png" alt="Esta imagem não existe"&gt;&lt;/img&gt;
+	    	</div>
+	    	<div class="w3-code notranslate">
+		  	<img src="img/analysisBlack16.png" alt="Esta imagem não existe"></img> 
+	    	</div>
+     		</div> 
+			
+			<div class="w3-container w3-white">
+			<h3 class="w3-text-dark-grey">Atributo style</h3>
+		    </div>
+			
+			<div class="w3-container w3-white">
+    		    <p class="w3-text-dark-grey">O atributo <code class="w3-codespan">style</code> permite utilizar propriedades CSS para dar estilo a um elemento(mudar cor,mudar a fonte e o tamanho do texto,etc.).</p>
+                <p class="w3-text-dark-grey">Este atributo pode conter vários valores no mesmo atributo e cada valor tem uma chave(exibido na forma <code class="w3-codespan">chave:valor</code>) e podem ser separados com <code class="w3-codespan">;</code>  </p>				
+						
+		    
+			</div>
+			
+			<div class="w3-panel w3-margin w3-card-2 w3-light-grey">
+			<h3>Exemplo do atributo style(com resultado)</h3>
+			<div class="w3-code notranslate">
+			&lt;p style="color:red;text-align:center"&gt;Exemplo&lt;/p&gt;
+			</div>
+			<div class="w3-code notranslate">
+			<p style="color:red;text-align:center">Exemplo</p>
+			</div>
+			</div>
+			
+			<div class="w3-container w3-white">
+    		    
+				<p class="w3-text-dark-grey">As propriedades deste atributo serão falados no tópico <code class="w3-codespan">CSS</code>  dado que todos os atributos do atributo <code class="w3-codespan">style</code> encontram-se lá.</p>
+             	    
+			</div>
+	
+		</div>
+  <!-- End page content -->
+</div>
+	<script>
+		w3CodeColor();
+	</script>
+</body>
+</html>
