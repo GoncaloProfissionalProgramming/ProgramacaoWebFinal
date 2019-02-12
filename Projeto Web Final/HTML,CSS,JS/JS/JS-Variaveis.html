@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Unit</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../Libraries/w3.css">
+
+	<style>
+		html,body,h1,h2,h3,h4,h5 {font-family: "Verdana", "Helvetica", sans-serif;}
+
+		h1 {font-size: 48px;}
+		h2 {font-size: 36px;}
+		h3 {font-size: 24px;}
+		h4 {font-size: 20px;}
+		h5 {font-size: 18px;}
+		h6 {font-size: 16px;}
+
+	</style>
+	
+	<script src="Libraries/w3codecolor.js"></script>
+	
+
+
+</head>
+<body class="w3-light-grey">
+
+<!-- !PAGE CONTENT! -->
+<div id="pageContent" class="w3-main w3-white" >
+
+	<div class="w3-row-padding w3-gray">
+		<h3>JavaScript</h3>
+	</div>
+	<div class="w3-row-padding w3-margin-bottom w3-light-gray">
+		<h4><i>Variáveis e tipos de Dados JS</i></h4>
+	</div>
+
+	<!-- Inicio -->
+	<div class="w3-row-padding w3-margin-bottom">
+
+			<div class="w3-container">
+				<h2>O que são Variáveis?</h2>
+			</div>
+			
+			<div class="w3-container w3-white">
+				<p class="w3-text-dark-grey">Numa linguagem de programação as variáveis são usadas para armazenar valores de dados.
+						JavaScript usa a palavra-chave <code class="w3-codespan">var</code> para declarar variáveis. O sinal de igual é usado para atribuir valores a variáveis. 
+						Existem muitos tipos de dados para atribuir a variáveis. Por regra geral uma variável só pode ter um tipo de dados.
+				</p>
+			</div>
+	
+	<div class="w3-row-padding w3-margin-bottom">
+
+		<div class="w3-container">
+			<h2>Tipos de Dados</h2>
+		</div>
+		
+		<div class="w3-container w3-white">
+			<p class="w3-text-dark-grey">Em JS existem sete tipos de dados que são:<br>
+			<ul>
+				<li>Boolean (Verdadeiro ou Falso)</li>
+				<li>Null (valor vazio)</li>
+				<li>Undefined (não existe valor)</li>
+				<li>Number</li>
+				<li>String</li>
+				<li>Symbol</li>
+				<li>Object</li>
+			</ul>
+			</p>
+		</div>
+
+				
+				<div class="w3-container">
+					<h2> Como declarar uma variável?</h2>
+				</div>
+
+				<div class="w3-container w3-white">
+					<p class="w3-text-dark-grey">Para declarar uma variável pode-se fazer de duas formas, se for uma variável sem um valor definido ou seja, 
+						a variável só vai ser afetada mais tarde então declara-se da seguinte forma: <code class="w3-codespan">var x;</code>, se a variável for para ter um valor especifico antes de ser 
+						utilizada, por exemplo ser igual a 7 então declara-se desta forma: <code class="w3-codespan">var x=7;</code>.
+					</p>
+				</div>
+		
+		
+					<div class="w3-panel w3-margin w3-card w3-light-grey"> 
+						<h4>Exemplo</h4>
+						<div class="w3-code JSHigh notranslate">
+							var x; // sem valor definido<br>
+							var z = 7; //variável z é igual a 7
+						</div>
+						
+						</div>
+
+						<div class="w3-container">
+							<h2> Exemplos de variáveis</h2>
+						</div>
+		
+						<div class="w3-container w3-white">
+							<p class="w3-text-dark-grey">O valor das variáveis podem ser sempre alteradas. Alguns exemplos de variáveis:</p>
+						</div>
+				
+				
+						<div class="w3-panel w3-margin w3-card w3-light-grey"> 
+							<h4>Exemplo</h4>
+							<div class="w3-code JSHigh notranslate">
+									var x; // sem valor definido<br>
+									var z = 7; //Tipo de dados: number<br>
+									var y= "Hello World" //Tipo de dados:String<br>
+									var w= True //Tipo de dados:Boolean<br>
+									var a= null //Tipo de dados:null<br>
+									var b= undefined //Tipo de dados:undefined<br>
+							</div>
+							
+							</div>
+
+							<div class="w3-container">
+								<h2> Font Size</h2>
+							</div>
+			
+							<div class="w3-container w3-white">
+								<p class="w3-text-dark-grey">A propriedade CSS Font-Size é usada para definir o tamanho do texto.<br>
+									<br>Existem 3 formas de definir o tamanho do texto:<br>
+									<ul>
+										<li>Percentagem (%)</li>
+										<li>Em (em)</li>
+										<li>Pixeis (px)</li>
+									</ul>
+								</p>
+							</div>
+					
+					
+							<div class="w3-panel w3-margin w3-card w3-light-grey"> 
+								<h4>Exemplo</h4>
+								<div class="w3-code htmlHigh notranslate">
+									&lt;p style="font-size: 120%;"&gt;Texto definido com Percentagem&lt;/p&gt;<br>
+									&lt;p style="font-size: 5em;"&gt;Texto definido com em&lt;/p&gt;<br>
+									&lt;p style="font-size: 25px;"&gt;Texto definido com pixeis&lt;/p&gt;<br>
+								</div>
+								<div class="w3-code htmlHigh notranslate" >
+									<p style="font-size: 120%">Texto definido com Percentagem</p>
+									<p style="font-size: 0.7em">Texto definido com em</p>
+									<p style="font-size: 25px">Texto definido com em</p>
+								</div>
+								
+							</div>
+
+							<div class="w3-container">
+								<h2> Font Weight</h2>
+							</div>
+			
+							<div class="w3-container w3-white">
+								<p class="w3-text-dark-grey">A propriedade CSS Font-Weight é usada para definir o a grossura do texto.<br>
+									<br>Existem 3 formas de definir a grossura do texto:<br>
+									<ul>
+										<li>Normal</li>
+										<li>Bold</li>
+										<li>Lighter</li>
+										<li>Por números</li>
+									</ul>
+								</p>
+							</div>
+					
+					
+							<div class="w3-panel w3-margin w3-card w3-light-grey"> 
+								<h4>Exemplo</h4>
+								<div class="w3-code htmlHigh notranslate">
+									&lt;p style="font-weight: normal;"&gt;Texto normal&lt;/p&gt;<br>
+									&lt;p style="font-weight: bold;"&gt;Texto a bold&lt;/p&gt;<br>
+									&lt;p style="font-weight: lighter;"&gt;Texto em lighter&lt;/p&gt;<br>
+									&lt;p style="font-weight: 600;"&gt;Texto por numeros&lt;/p&gt;<br>
+								</div>
+								<div class="w3-code htmlHigh notranslate" >
+									<p style="font-weight: normal">Texto normal</p>
+									<p style="font-weight: bold">Texto a bold</p>
+									<p style="font-weight: lighter">Texto em lighter</p>
+									<p style="font-weight: 900;">Texto por numeros</p>
+								</div>
+								
+							</div>
+
+  <!-- End page content -->
+</div>
+	<script>
+		w3CodeColor();
+	</script>
+</body>
+</html>
