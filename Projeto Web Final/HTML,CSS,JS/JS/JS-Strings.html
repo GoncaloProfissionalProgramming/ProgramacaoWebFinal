@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Unit</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../Libraries/w3.css">
+
+	<style>
+		html,body,h1,h2,h3,h4,h5 {font-family: "Verdana", "Helvetica", sans-serif;}
+
+		h1 {font-size: 48px;}
+		h2 {font-size: 36px;}
+		h3 {font-size: 24px;}
+		h4 {font-size: 20px;}
+		h5 {font-size: 18px;}
+		h6 {font-size: 16px;}
+
+	</style>
+	
+	<script src="Libraries/w3codecolor.js"></script>
+	
+
+
+</head>
+<body class="w3-light-grey">
+
+<!-- !PAGE CONTENT! -->
+<div id="pageContent" class="w3-main w3-white" >
+
+	<div class="w3-row-padding w3-gray">
+		<h3>JavaScript</h3>
+	</div>
+	<div class="w3-row-padding w3-margin-bottom w3-light-gray">
+		<h4><i>Strings JS</i></h4>
+	</div>
+
+	<!-- Inicio -->
+	<div class="w3-row-padding w3-margin-bottom">
+
+			<div class="w3-container">
+				<h2>O que são Strings?</h2>
+			</div>
+			
+			<div class="w3-container w3-white">
+				<p class="w3-text-dark-grey">As strings em JavaScript são usadas para guardar e manipular texto. Uma string tem zero ou mais caracteres.
+				</p>
+			</div>
+	
+	<div class="w3-row-padding w3-margin-bottom">
+
+		<div class="w3-container">
+			<h2>Strings</h2>
+		</div>		
+		<div class="w3-panel w3-margin w3-card w3-light-grey"> 
+						<h4>Exemplo</h4>
+						<div class="w3-code JSHigh notranslate">
+							var x = "João"; 
+						</div>
+		</div>
+		<div class="w3-container w3-white">
+			<p class="w3-text-dark-grey">Pode ter aspas ou plicas:</p>
+		</div>
+		<div class="w3-panel w3-margin w3-card w3-light-grey"> 
+			<h4>Exemplo</h4>
+			<div class="w3-code JSHigh notranslate">
+				var nome = "João"; <br>
+				var nome2 ='António';
+			</div>
+		</div>
+		<div class="w3-container w3-white">
+			<p class="w3-text-dark-grey">Pode-se usar aspas dentro de uma String, desde que as aspas não sejam iguais ás primeiras aspas:</p>
+		</div>
+		<div class="w3-panel w3-margin w3-card w3-light-grey"> 
+			<h4>Exemplo</h4>
+			<div class="w3-code JSHigh notranslate">
+				var answer1 = "It's alright";<br>
+				var answer2 = "He is called 'Johnny'";<br>
+				var answer3 = 'He is called "Johnny"';
+			</div>
+		</div>
+</div>
+<div class="w3-row-padding w3-margin-bottom">
+
+	<div class="w3-container">
+		<h2>String Length</h2>
+	</div>	
+	<div class="w3-container w3-white">
+		<p class="w3-text-dark-grey">Para ver o comprimento de uma string usamos o método <code class="w3-codespan">length</code>.</p>
+	</div>	
+	<div class="w3-panel w3-margin w3-card w3-light-grey"> 
+					<h4>Exemplo</h4>
+					<div class="w3-code JSHigh notranslate">
+						var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";<br>
+						var sln = txt.length;
+					</div>
+	</div>
+
+	<div class="w3-row-padding w3-margin-bottom">
+
+		<div class="w3-container">
+			<h2>Strings podem ser objectos</h2>
+		</div>	
+		
+		<div class="w3-panel w3-margin w3-card w3-light-grey"> 
+						<h4>Exemplo</h4>
+						<div class="w3-code JSHigh notranslate">
+							var firstName = "John";<br>
+							var firstName1 = new String ("John"); <br><br>
+							firstName1 é um objecto<br>
+							firstName é uma string
+						</div>
+		</div>
+<!-- End page content -->
+	<script>
+		w3CodeColor();
+	</script>
+</body>
+</html>
