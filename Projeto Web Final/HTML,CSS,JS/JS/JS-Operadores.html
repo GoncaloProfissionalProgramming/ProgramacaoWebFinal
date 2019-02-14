@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Unit</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../Libraries/w3.css">
+
+	<style>
+		html,body,h1,h2,h3,h4,h5 {font-family: "Verdana", "Helvetica", sans-serif;}
+
+		h1 {font-size: 48px;}
+		h2 {font-size: 36px;}
+		h3 {font-size: 24px;}
+		h4 {font-size: 20px;}
+		h5 {font-size: 18px;}
+		h6 {font-size: 16px;}
+
+	</style>
+	
+	<script src="Libraries/w3codecolor.js"></script>
+	
+
+
+</head>
+<body class="w3-light-grey">
+
+<!-- !PAGE CONTENT! -->
+<div id="pageContent" class="w3-main w3-white" >
+
+	<div class="w3-row-padding w3-gray">
+		<h3>JavaScript</h3>
+	</div>
+	<div class="w3-row-padding w3-margin-bottom w3-light-gray">
+		<h4><i>Operadores JS</i></h4>
+	</div>
+
+	<!-- Inicio -->
+	
+			<div class="w3-container">
+				<h2>O que são operadores?</h2>
+			</div>
+			
+			<div class="w3-container w3-white">
+				<p class="w3-text-dark-grey">Em JavaScript existem 4 tipos de operadores que são:
+					<ul>
+							<li>Operadores aritméticos</li>
+							<li>Operadores de atribuição</li>
+							<li>Operadores de comparação</li>
+							<li>Operadores de lógica</li>
+					</ul>
+				</p>
+			</div>
+	
+	
+
+		<div class="w3-container">
+			<h2>Operadores Aritméticos</h2>
+		</div>	
+		<div class="w3-container w3-white">
+			<p class="w3-text-dark-grey">São 8 os operadores Aritméticos:
+				<ul>
+					<li>+ (Adição)</li>
+					<li>- (Subtração)</li>
+					<li>* (Multiplicação)</li>
+					<li>** (Exponenciação)</li>
+					<li>/ (Divisão)</li>
+					<li>% (Para descobrir o resto de uma revisão)</li>
+					<li>++ (Incrementar)</li>
+					<li>-- (Decrementar)</li>
+				</ul>
+			</p>
+		</div>	
+		<div class="w3-panel w3-margin w3-card w3-light-grey"> 
+						<h4>Exemplo</h4>
+						<div class="w3-code JSHigh notranslate">
+							var x = 3;<br>
+							var z = 1;<br>
+							var y = x + z; //isto dá 4<br>
+							var y = x - z; //isto dá 2<br>
+							var y = x * z; //isto dá 3<br>
+							var y = x ** z;//isto dá 3 elevado a 1<br>
+							var y = x / z; //isto dá 3<br>
+							var y = x % z; //isto dá 0<br>
+							var y = x++; //isto dá 4<br>
+							var y = x--; //isto dá 2<br>
+						</div>
+		</div>
+
+		<div class="w3-container">
+			<h2>Operadores de atribuição</h2>
+		</div>	
+		<div class="w3-container w3-white">
+			<p class="w3-text-dark-grey">São 6 os operadores de atribuição:
+				<ul>
+					<li>= (Igual)</li>
+					<li>+= (Mais Igual)</li>
+					<li>-= (Menos Igual)</li>
+					<li>*= (Multiplicação Igual)</li>
+					<li>/= (Divisão Igual)</li>
+					<li>% (Resto Igual)</li>
+				</ul>
+			</p>
+		</div>	
+		<div class="w3-panel w3-margin w3-card w3-light-grey"> 
+						<h4>Exemplo</h4>
+						<div class="w3-code JSHigh notranslate">
+							var x = 1;<br>
+							var z = 3;<br>
+							var z = x;  //z é igual a 1<br>
+							var z += x; //z é igual a 4(z=z+x)<br>
+							var z -= x; //z é igual a 2(z=z-x)<br>
+							var z *= x; //z é igual a 3(z=z*x)<br>
+							var z /= x; //z é igual a 3(z=z/x)<br>
+							var z %= x; //z é igual a 0(z=z%x)<br>
+						</div>
+		</div>
+		<div class="w3-container">
+			<h2>Operadores de comparação</h2>
+		</div>	
+		<div class="w3-container w3-white">
+			<p class="w3-text-dark-grey">São 6 os operadores de comparação:
+				<ul>
+					<li>== (Igual)</li>
+					<li>=== (Valor igual a )</li>
+					<li>!= (Diferente de)</li>
+					<li>!== (Valor diferente a)</li>
+					<li>> (Maior que)</li>
+					<li> < (Menor que)</li>
+					<li> >= (Maior ou igual)</li>
+					<li> <= (Menor ou igual)</li>
+				</ul>
+			</p>
+		</div>	
+		<div class="w3-panel w3-margin w3-card w3-light-grey"> 
+						<h4>Exemplo</h4>
+						<div class="w3-code JSHigh notranslate">
+							var z == x;  //z igual a x<br>
+							var z === x;  //valor de z igual a x<br>
+							var z != x;  //z diferente de x<br>
+							var z !== x; //valor do z diferente de x<br>
+							var z > x;   //z maior que x<br>
+							var z < x;   //z menor que x<br>
+							var z >= x;  //z maior ou igual a x<br>
+							var z <= x;  //z menor ou igual a x<br>
+						</div>
+		</div>
+		<div class="w3-container">
+				<h2>Operadores de lógica</h2>
+			</div>	
+			<div class="w3-container w3-white">
+				<p class="w3-text-dark-grey">São 3 os operadores de lógica:
+					<ul>
+						<li>&& (e)</li>
+						<li>|| (ou )</li>
+						<li>! (Não)</li>
+					</ul>
+				</p>
+			</div>	
+			<div class="w3-panel w3-margin w3-card w3-light-grey"> 
+							<h4>Exemplo</h4>
+							<div class="w3-code JSHigh notranslate">
+								var z && x>10;  //z e x maior que 10<br>
+								var z || x;  //z ou x<br>
+								var z ! x;  //Retorna True se for falso e falso se for True<br>
+							</div>
+			</div>
+		
+	</div>
+
+
+
+<!-- End page content -->
+	<script>
+		w3CodeColor();
+	</script>
+</body>
+</html>
