@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Unit</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../Libraries/w3.css">
+
+	<style>
+		html,body,h1,h2,h3,h4,h5 {font-family: "Verdana", "Helvetica", sans-serif;}
+
+		h1 {font-size: 48px;}
+		h2 {font-size: 36px;}
+		h3 {font-size: 24px;}
+		h4 {font-size: 20px;}
+		h5 {font-size: 18px;}
+		h6 {font-size: 16px;}
+
+	</style>
+	
+	<script src="Libraries/w3codecolor.js"></script>
+	
+
+
+</head>
+<body class="w3-light-grey">
+
+<!-- !PAGE CONTENT! -->
+<div id="pageContent" class="w3-main w3-white" >
+
+	<div class="w3-row-padding w3-gray">
+		<h3>JavaScript</h3>
+	</div>
+	<div class="w3-row-padding w3-margin-bottom w3-light-gray">
+		<h4><i>Functions JS</i></h4>
+	</div>
+
+	<!-- Inicio -->
+	
+
+			<div class="w3-container">
+				<h2>O que são Funções?</h2>
+			</div>
+			
+			<div class="w3-container w3-white">
+				<p class="w3-text-dark-grey">Uma função JavaScript é um bloco de código usado para executar uma tarefa específica.
+
+					Uma função JavaScript é executada quando é chamada no código.
+				</p>
+			</div>
+	
+			<div class="w3-panel w3-margin w3-card w3-light-grey"> 
+					<h4>Exemplo</h4>
+					<div class="w3-code JSHigh notranslate">
+						function soma(num1, num2) {<br>
+							&nbsp;&nbsp;&nbsp;return num1 + num2;   // Retorna a soma de num1 com num2<br>
+						  }
+					</div>
+	</div>
+	
+
+		<div class="w3-container">
+			<h2>Syntax de uma função</h2>
+		</div>	
+		<div class="w3-container w3-white">
+				<p class="w3-text-dark-grey">Para definir uma função necessitamos da palavra <code class="w3-codespan">function</code> seguida por um nome e parenteses "()".<br>
+				Os nomes das funções podem conter letras, dígitos, sublinhados e cifrões.<br>Os parênteses podem incluir nomes de parâmetros separados por vírgulas:
+					(parâmetro1, parâmetro2, ...)<br>O código a ser executado, pela função, é colocado dentro de chavetas "{}". <br> Os parametros são listados entre os parenteses.    
+				</p>
+			</div>	
+		<div class="w3-panel w3-margin w3-card w3-light-grey"> 
+						<h4>Exemplo</h4>
+						<div class="w3-code JSHigh notranslate">
+							function nome(parametero1, parametero2, parametero3) {<br>
+							&nbsp;&nbsp;&nbsp;// Código a ser executado<br>
+							  }
+						</div>
+		</div>
+		
+		<div class="w3-container">
+				<h2>Chamar uma função</h2>
+			</div>	
+			<div class="w3-container w3-white">
+					<p class="w3-text-dark-grey">Para chamar uma função chamamos pelo nome, seguido de parenteses e se tiver parametros estes são inseridos dentro dos parenteses.
+					</p>
+				</div>	
+			<div class="w3-panel w3-margin w3-card w3-light-grey"> 
+							<h4>Exemplo</h4>
+							<div class="w3-code JSHigh notranslate">
+									soma(1,2);
+							</div>
+							<h4>Resultado</h4>
+							<div class="w3-code JSHigh notranslate">
+									3	
+							</div>
+			</div>
+
+			<div class="w3-container">
+					<h2>Return da função</h2>
+				</div>	
+				<div class="w3-container w3-white">
+					<p class="w3-text-dark-grey">Quando o JavaScript encontra um return, a função  parar de ser executada.<br>
+						Se a função foi chamada a partir de uma instrução, o JavaScript "retornará" para executar o código após ser chamado.<br>
+						Funções frequentemente calculam um valor de retorno. O valor de retorno é "devolvido" de volta a quem chama a função.
+					</p>
+				</div>	
+				
+				<div class="w3-panel w3-margin w3-card w3-light-grey"> 
+								<h4>Exemplo</h4>
+								<div class="w3-code JSHigh notranslate">
+									var x = soma(1, 2);   // função é chamada
+
+									function soma(a, b) {
+									  return a + b;             // Retorna a soma de a com b
+									}
+								</div>
+								<h4>Resultado</h4>
+								<div class="w3-code JSHigh notranslate">
+										3	
+								</div>
+				</div>
+		
+
+<!-- End page content -->
+	<script>
+		w3CodeColor();
+	</script>
+</body>
+</html>
